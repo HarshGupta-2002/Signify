@@ -58,6 +58,7 @@ canvas {
     border: unset;
     border-radius: 3px;
     padding: 5px;
+    cursor: pointer;
 }
 #clear {
     background-color: red;
