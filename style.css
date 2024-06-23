@@ -1,0 +1,123 @@
+:root {
+    font-family: monospace;
+}
+
+body {
+    background-image: url("assets/background.png");
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 20px;
+    font-size: 19px;
+}
+#image {
+    height: 12vh;
+    margin-right: 5px;
+}
+#description {
+    font-weight: 500;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+}
+.controls label {
+    margin: 0 10px;
+    font-size: 14px;
+    font-weight: 550;
+}
+
+.sign-space {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    margin: 5vh auto;
+    max-width: 75vw;
+}
+canvas {
+    height: 100%;
+    width: 100%;
+    border: 2px solid #000;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+    font-size: 19px;;
+}
+.buttons {
+    font-size: 19px;
+    color: white;
+    border: unset;
+    border-radius: 3px;
+    padding: 5px;
+}
+#clear {
+    background-color: red;
+}
+#download {
+    background-color: green;
+}
+select {
+    font-size: 17px;
+    border-radius: 3px;
+}
+
+#file-type {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+
+
+
+.watermark {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    margin-right: 2%;
+    margin-bottom: 2%;
+}
+.watermark img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+@media only screen and (max-width: 650px) {
+    .controls {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .control-options {
+        text-align: center;
+        margin: 10px auto;
+    }
+    #description {
+        font-size: 17px;
+    }
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    .buttons {
+        justify-content: center;
+        text-align: center;
+        width: fit-content;
+        font-size: 17px;
+    }
+    #file-type {
+        margin: 10px auto;
+        font-size: 17px;
+    }
+}

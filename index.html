@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signify</title>
+    <link rel="icon" href="assets/logo1.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="title">
+        <div id="logo"><img id="image" src="assets/logo2.svg" alt="Logo"></div>
+        <div id="description">A simple Web Application to generate e-signatures by hand and download them in any format
+            as per the need.</div>
+    </div>
+    <div class="controls">
+        <div class="control-options">
+            <label for="brushColor">Brush Color:</label>
+            <input type="color" id="brushColor" value="#000000">
+        </div>
+
+        <div class="control-options">
+            <label for="bgColor">Background Color:</label>
+            <input type="color" id="bgColor" value="#ffffff">
+        </div>
+
+        <div class="control-options">
+            <label for="brushThickness">Brush Thickness:</label>
+            <input type="range" id="brushThickness" min="1" max="20" value="2">
+        </div>
+    </div>
+    <div class="sign-space">
+        <canvas id="canvas"></canvas>
+    </div>
+    <div class="footer">
+        <div>
+            <button class="buttons" id="clear">Clear</button>
+        </div>
+        <div id="file-type">
+            <label for="file">Choose file type:</label>
+            <select name="file" id="file">
+                <option value="png">.png</option>
+                <option value="jpg">.jpg</option>
+                <option value="pdf">.pdf</option>
+            </select>
+        </div>
+        <div>
+            <button class="buttons" id="download">Download</button>
+        </div>
+    </div>
+    <div class="watermark">
+        <img src="assets/Watermark.svg">
+    </div>
+</body>
+
+</html>
