@@ -124,7 +124,7 @@ document.addEventListener('DOMContentLoaded', () => {
             script.onload = () => {
                 const { jsPDF } = window.jspdf;
                 const pdf = new jsPDF({
-                    orientation: 'landscape',
+                    // orientation: 'landscape',
                     unit: 'px',
                     format: [canvas.width, canvas.height]
                 });
