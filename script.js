@@ -123,9 +123,8 @@ document.addEventListener('DOMContentLoaded', () => {
             script.src = "https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js";
             script.onload = () => {
                 const { jsPDF } = window.jspdf;
-                const orientation = window.innerWidth > 650 ? 'landscape' : 'portrait';
                 const pdf = new jsPDF({
-                    orientation: orientation,
+                    orientation: 'landscape',
                     unit: 'px',
                     format: [canvas.width, canvas.height]
                 });
