@@ -108,14 +108,6 @@ document.addEventListener('DOMContentLoaded', () => {
         setBackgroundColor(bgColor);
     }
 
-    // download the canvas as an image
-    // function downloadCanvas() {
-    //     const link = document.createElement('a');
-    //     link.href = canvas.toDataURL();
-    //     link.download = 'signature.png';
-    //     link.click();
-    // }
-
     // Save the canvas as an image or PDF
     function downloadCanvas() {
         const fileType = fileTypeSelect.value;
